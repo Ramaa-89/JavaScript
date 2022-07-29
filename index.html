@@ -3,120 +3,310 @@
 <head>
     <meta charset="UTF-8">
    
-    <title>Productos</title>
+    <title>goPet</title>
     <meta name="description" content="Lo mejor para vos y tus mascotas. Ofrecemos una gama completa de artículos para mascotas para vos y tus mascotas: más de 8000 productos de primer nivel en stock y listos para enviar.">
     <meta name="keywords" content="goPet, alimentos balanceados, alimentos para mascotas,go y pet,alimento balanceado para perros,alimento balanceado para gatos,petshop,Buenos Aires">
-      <!--Facebook-->
+      
     <meta property="og:title" content="Conseguí los mejores productos para el cuidado de tu mascota.">
     <meta property="og:url" content="https://www.gopet.com/ ">
     <meta property="og:site_name" content="goPet Shop Online">
     <meta property="og:description" content="goPet Shop en Argentina. La forma más sencilla y rápida de comprar productos de las mejores marcas para tu mascota. Envíos a domicilio. ">
-
+    
     <link rel="shortcut icon" href="./images/favicon.webp" type="image/x-icon">
+    
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <style></style>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
- 
     <link rel="stylesheet" href="./css/estilos-.css" type="text/css">
 </head>
 <body>
     <header>
         <!-- Empieza el menú superior -->
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-              <a class="navbar-brand col-3" href="./index.html">
-                  <img src="./images/logo1.png" alt="">
-                </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav col-xl-9">
-                  <ul class="navbar-nav col-sm-12">
-                      <li class="nav-item">
-                        <a class="nav-link text-light" href="./servicios.html">Servicios</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="./productos.html">Productos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-light" href="./nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-light" href="./contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item d-none d-md-block">
-                        <a class="nav-link disabled text-black-70">CallVet <i class="fa-solid fa-phone"></i></a>
-                      </li>
-                      <li class="nav-item d-block d-sm-block d-md-none">
-                        <a href="tel:1164116862;" class="nav-link text-light">CallVet <i class="fa-solid fa-phone"></i></a>
-                      </li>
-                    </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand col-3" href="./index.html">
+                    <img class=""src="./images/logo1.png" alt="">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav col-xl-9">
+                    <ul class="navbar-nav col-sm-12">
+                        <li class="nav-item">
+                          <a class="nav-link text-light" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block ">
+                          <a class="nav-link disabled text-black-70">CallVet <i class="fa-solid fa-phone"></i></a>
+                        </li>
+                        <li class="nav-item d-block d-sm-block d-md-none ">
+                          <a href="tel:1164116862;" class="nav-link text-light">CallVet <i class="fa-solid fa-phone"></i></a>
+                        </li>  
+                      </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
     </header>
+
+    <section class="busqueda">
+        <div class="container">
+            <input type="text" placeholder="Buscar">
+            <div class="search"></div>
+        </div>
+    </section>
     
-    <!-- LISTADO de PRODUCTOS -->
-    <section class="centrado">
-        <h1>Productos</h1>
+    
+<!-- Slider Desktop -->
+<section id="sliderHome" class="carru-1">    
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/slider-1-mob.webp" class="d-block w-100" alt="pichichos felices">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider-3-mob.webp" class="d-block w-100" alt="surtido de productos">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider-2-mob.webp" class="d-block w-100" alt="nuevo local">
+                
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
-    <section class="productos">
-        <div class="card col-md-6 col-sm-12" style="width: 18rem;">
-            <div class="card-body">
-              <img class="imgServ" src="./images/Dog_Transport_1000x1000_7.webp" alt="Transportadoras">
-              <h5 class="card-title">Transportadoras</h5>
-              <p class="card-text">Conocé las transportadoras para tu mascota.</p>
-              <a href="#" class="btn btn-primary">Ingresar</a>
+    <!-- Slider Mobile-->
+    <section id="sliderHome" class="carru-2">    
+        <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-          </div>
-          <div class="card col-md-6 col-sm-12" style="width: 18rem;">
-            <div class="card-body">
-              <img class="imgServ" src="./images/Dog_Beds_1000x1000_1.webp" alt="Cuchas de interior">
-              <h5 class="card-title">Cuchas de interior</h5>
-              <p class="card-text">Conocé todas las cuchas de interior para tu mascota.</p>
-              <a href="#" class="btn btn-primary">Ingresar</a>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/slider-image-01.webp" class="d-block w-100" alt="pichichos felices">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="./images/_.webp" class="d-block w-100" alt="surtido de productos">
+                
+              </div>
+              <div class="carousel-item">
+                <img src="./images/PETSHOP-TENDENCIAS-PETINDUSTRY1.webp" class="d-block w-100" alt="nuevo local">
+                
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="card col-md-6 col-sm-12" style="width: 18rem;">
-            <div class="card-body">
-              <img class="imgServ" src="./images/Dog_Kennel_1000x1000_1.webp" alt="Cuchas de exterior">
-              <h5 class="card-title">Cuchas de exterior</h5>
-              <p class="card-text">Conocé todas las cuchas de exterior para tu mascota.</p>
-              <a href="#" class="btn btn-primary">Ingresar</a>
-            </div>
-          </div>
-          <div class="card col-md-6 col-sm-12" style="width: 18rem;">
-            <div class="card-body">
-              <img class="imgServ" src="./images/Dog_Grooming_Care_1000x1000_1.webp" alt="Artículos de peluquería">
-              <h5 class="card-title">Artículos de peluquería</h5>
-              <p class="card-text">Mantené a tu mascota con los mejores productos.</p>
-              <a href="#" class="btn btn-primary">Ingresar</a>
-            </div>
-          </div>
-          <div class="card col-md-6 col-sm-12" style="width: 18rem;">
-            <div class="card-body">
-              <img class="imgServ" src="./images/Dog_Supplements_1000x1000_UK_1.webp" alt="Alimento balanceado">
-              <h5 class="card-title">Alimento balanceado</h5>
-              <p class="card-text">El mejor surtido de alimentos para todo tipo de mascotas.</p>
-              <a href="#" class="btn btn-primary">Ingresar</a>
-            </div>
-          </div>
-        
     </section>
-    <!-- Descripcion extra-->
-    <section class="seccion2">
-        <!-- IMAGEN DE PORTADA-->
-        <div class="head">
-            <img src="./images/perri-banner.webp" alt="Lo mejor para tu mascota"/>
+
+<!-- Bullets de comentarios de clientes -->
+    
+<section class="pt-5 pb-5 col-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="mb-3">Clientes</h1>
+            </div>
+            <div class="col-6 text-right">
+                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+                <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-1.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Ayelen</h4>
+                                            <p class="card-text">Excelente el producto, compré por Mercado libre. A mis michis les encanto y el precio muy bueno! La atención y la entrega 🚚 realmente me sorprendió de lo rápido y eficiente Gracias!</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-2.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Carlos</h4>
+                                            <p class="card-text">Excelente servicio! Siempre responden rápido y la entrega es inmediata. Llevo comprando un par de años y siempre todo perfecto.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-3.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Sebastian</h4>
+                                            <p class="card-text">Tiene una excelente atención. Siempre los elijo a la hora de comprar por la eficiencia, responsabilidad y sobre todo por el trato cordial que los caracteriza.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-4.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Juan</h4>
+                                            <p class="card-text">Excelente tienda, 100% recomendados. Excelente atención y puntualidad. Soy cliente desde hace más de un año. Buenos precios y calidad.</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-5.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Maria</h4>
+                                            <p class="card-text">Hace ya un par de años que les compro, tienen los mejores precios, muy buena y rapida la atencion y los envios. Recomiendo ampliamente</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-6.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Cecilia</h4>
+                                            <p class="card-text">Excelente atención. Siempre me mantienen al tanto de los tiempos de envío y nunca tuve problemas con ningún pedido.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-7.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Carla</h4>
+                                            <p class="card-text">Muy bueno. La atención es buena, es muy fácil comprar por la web y tiene muy buenos precios, mejores que MercadoLibre. Saludos</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-8.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Pedro</h4>
+                                            <p class="card-text">Siempre que compre tuve buena atencion, de mí parte es recomendable. Sin problema alguno hacia ellos.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card">
+                                        <img class="img-fluid w-100" alt="Clientes felices 100" src="./images/foto-9.webp">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Agustin</h4>
+                                            <p class="card-text">Excelente servicio, variedad de productos y muy buenas ofertas. Y el servicio de entrega es muy eficiente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="texto">
-            <h3>Lo mejor para vos y tus mascotas</h3>
-            <p>Ofrecemos una gama completa de artículos para mascotas para vos y tus mascotas: más de 8000 productos de primer nivel en stock y listos para enviar. Con más de 20 años de experiencia en alimentos para mascotas y accesorios para mascotas, puede esperar las mejores marcas y productos de calidad a precios increíblemente bajos.<br><br>Nuestro objetivo es hacer tu vida más fácil con pedidos en línea simples y entrega a domicilio conveniente. Con características útiles como videos de productos, reseñas y fotos de clientes, y descripciones de productos cuidadosamente investigadas, siempre puede tomar una decisión informada sobre qué producto es el adecuado para su mascota.<br><br>En nuestras oficinas europeas de Múnich, Estrasburgo, Cracovia, Génova y Oxford, miembros del equipo de más de 15 nacionalidades trabajan juntos para mejorar zooplus todos los días. Estamos orgullosos de ofrecer lo mejor para ti y tus mascotas los 365 días del año.</p>
-            <h3>Compras seguras y seguras</h3>
-            <p>Nunca compartimos sus datos personales con anunciantes u otros terceros. Sus datos se utilizan para una sola cosa: procesar su pedido.<br><br>Para asegurarnos de que está protegido mientras compra, utilizamos encriptación SSL de 128 bits (protocolo de capa de conexión segura) para todas nuestras transacciones. Eso significa que cada vez que nos envía datos, como su dirección o la información de su tarjeta de crédito, se cifran para que nadie más que usted y nosotros los vea.<br><br>Puede obtener más información sobre nuestras políticas con respecto a la seguridad de los datos en la política de privacidad completa de zooplus.</p>
+    </div>
+    
+</section>
+<!-- IFRAME DE MAPA -->
+    <section id="mapa">
+        <div class="map1">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6575.659272725745!2d-58.529536976517335!3d-34.50720307193826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0f191dd3b97%3A0xec12755f4fd4ddf1!2sParan%C3%A1%203745%2C%20Mart%C3%ADnez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1650052988111!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+        <div class="map2">
+            <h3>Dejanos tu valoración</h3>
+            <img src="./images/favicon.webp" alt="goPet shop"><br>
+            <form class="valor">
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5">
+                    <label for="radio1">★</label>
+                    <input id="radio2" type="radio" name="estrellas" value="4">
+                    <label for="radio2">★</label>
+                    <input id="radio3" type="radio" name="estrellas" value="3">
+                    <label for="radio3">★</label>
+                    <input id="radio4" type="radio" name="estrellas" value="2">
+                    <label for="radio4">★</label>
+                    <input id="radio5" type="radio" name="estrellas" value="1">
+                    <label for="radio5">★</label>
+                </p>
+            </form>
+            <ol>
+                <li>
+                    <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i> Profesional
+                </li>
+                <li>
+                    <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i> Velocidad de respuesta
+                </li>
+                <li>
+                    <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i> Calidad de sus productos
+                </li>
+            </ol>
         </div>
     </section>
+
     <footer id="footer">
         <div>
             <a href="./index.html"><img class="logo--marca" src="./images/logo1.png" alt="goPet shop"></a>
@@ -124,17 +314,22 @@
         <div>
             <p>goPet shop - pagina creada por <a href="https://rmorales89.myportfolio.com/" target="_blank">RamDesign <i class="fa-solid fa-wand-magic-sparkles"></i></a></p>
         </div>
-        <!-- enlace a Redes -->
+<!-- enlace a Redes -->
         <div class="redes">
-            <a href="https://www.facebook.com/"target="_blank"><img class="logo--redes" src="./images/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/"target="_blank"><img class="logo--redes" src="./images/instagram.png" alt="Instagram"></a>
-            <a href="https://twitter.com/"target="_blank"><img class="logo--redes" src="./images/twitter.png" alt="Twitter"></a>
-            <a href="https://youtube.com/"target="_blank"><img class="logo--redes" src="./images/youtube.png" alt="YouTube"></a>
-            <a href="https://whatsapp.com/"target="_blank"><img class="logo--redes" src="./images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="https://www.facebook.com/"target="_blank"><img class="logo--redes"src="./images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagra.com/"target="_blank"><img class="logo--redes"src="./images/instagram.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com/"target="_blank"><img class="logo--redes"src="./images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/"target="_blank"><img class="logo--redes"src="./images/youtube.png" alt="YouTube"></a>
+            <a href="https://www.whatsapp.com/"target="_blank"><img class="logo--redes"src="./images/whatsapp.png" alt="Whatsapp"></a>
         </div>
     </footer>
-    <script type="text/javascript" src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/11e5e4cd66.js" crossorigin="anonymous"></script>
+
+<script type='text/javascript'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/11e5e4cd66.js" crossorigin="anonymous"></script>
+<script type='text/javascript' src=''></script>
+<script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+
 </body>
 </html>

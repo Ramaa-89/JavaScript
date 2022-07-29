@@ -142,6 +142,9 @@ html {
   .productos .card {
     max-width: 350px;
     border-radius: 10px 10px 10px 10px; }
+.seccion2{
+  margin-top: 5%;
+}
 
 .seccion2 .head img {
   width: 100%;
@@ -149,6 +152,84 @@ html {
 
 .seccion2 .texto {
   padding: 4%; }
+
+  .navInterna li {
+    display:inline-flex; }
+  
+  p {
+    display: inherit; }
+  .navInterna {
+    text-align: center;
+    padding: 20px; }
+    .navInterna a,
+    .navInterna p {
+      text-decoration: none;
+      color: #8750aa;
+      font-family: 'Poppins', sans-serif;
+      font-weight: bold;
+      font-size: medium;
+      margin: 5px;
+       }
+    .navInterna li{
+      list-style: none;
+    }
+    .navInterna li a{
+     color:#fff;
+    }
+  
+  .plato {
+    width: 200px;
+    height: 150px;
+    max-width: 100%;
+    margin: 10px; }
+  
+  #alimento-perro, #alimento-gato {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px; }
+
+    .platos {
+      border: #8750aa 2px solid;
+      border-radius: 8px;
+      padding-bottom: 30px;
+      max-width: 220px;
+      text-align: center;
+      /*box-shadow: 0px 5px 9px 2px rgba(0, 0, 0, 0.81);*/ }
+      .platos p {
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1rem;
+        /*text-align: center;*/
+        color: black;
+        font-weight: bolder;
+        margin: 10px auto 10px auto;
+        max-width: 90%;
+        height: 45px; }
+      .platos:hover {
+        transform: scale(1.02, 1.02); }
+    
+        .campoCantidad {
+        max-width: 50px;
+        height: 35px;
+        display: inline-block;
+        margin-left: 15px;
+        padding-left: 5px;
+        font-size: 1rem;
+        border-radius: 4px;
+        border-color: #8750aa;
+    
+      }
+      .fotosPlatos h3 {
+        width: 100%;
+        font-size: 2rem;
+        border-radius: 4px;
+        color: #ffffff;
+        padding: 5px 0; 
+        text-align: center;
+        margin: 2%;
+      }
 
 /* SECCIONES SERVICIOS */
 .servicios {
@@ -611,3 +692,153 @@ h3, h4 {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "header header header" "slider slider slider" "clientes clientes clientes" "mapa mapa mapa" "footer footer footer"; }
+
+
+  /* Inicio Carrito.-------------------------- */
+.carroCompra{
+  margin-right:2%;
+  padding:1%;
+  text-align: center;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 4%;
+  border-radius:20px;
+  
+}
+.carroCompra:hover{
+  color:#48b979;
+  border: 1px solid #48b979;
+  background-color: rgba(255, 255, 255, 0.471);
+}
+.carrito {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5%;
+  /* background-color: aqua; */
+}
+#bodyCarrito main{
+  min-height: 500px;
+}
+
+#productosAgregados{
+  border-radius: 4px;
+  width: 90%;
+  margin: auto; 
+  padding-top: 30px;
+}
+
+#comentarioEnvio{
+width: 90%;
+margin: auto;
+text-align: center;
+font-size: 0.8rem;
+font-family:Arial, Helvetica, sans-serif;
+/* background-color: beige; */
+}
+
+
+#productosAgregados p{
+  display: inline-block;
+}
+#tituloProd {
+  width: 450px;
+  padding-left: 30px;
+  padding-top: 15px;
+  font-size: 1.2rem;
+}
+#tituloPrecio, #tituloTotal{
+  width: 80px;
+  margin-left: 10px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.2rem;
+}
+#tituloCant{
+  width: 80px;
+  margin-left: 50px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 1.2rem;
+}
+.tituloCarrito{
+  margin: 10px 0px 20px 0px;
+  padding-bottom: 20px;
+  display: flex ; 
+  justify-content: space-between;
+  align-items:center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+.productoCarrito {
+  display: flex;
+  margin: 10px 0px 20px 0px;
+  justify-content: space-between;
+  align-items:center;
+  padding-bottom: 20px;
+  border-bottom: lightgray solid 0.5px;
+ 
+  }
+  .productoCarrito p {
+    display: inline-block !important; 
+    font-family: 'Roboto', sans-serif;
+
+     }
+
+  .productoCarrito img {
+    display: inline-block !important;}
+
+.nombreCarrito{
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 350px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  align-items: center;
+    }
+ .precioCarrito, .totalCarrito{
+  margin-left: 10px;
+  padding-top: 10px;
+  width: 80px  ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  
+  align-items: center;
+}
+.cantidadCarrito{
+  margin-left: 50px;
+  padding-top: 10px;
+  width: 80px  ;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 1rem;
+  text-align: center;
+}
+.imgCarrito {
+  width: 100px;
+  height: 75px;
+  border-radius: 10%;
+}
+
+.eliminarProd{
+  border: none;
+  background: none;
+  color: #8750aa;
+  font-size: 2rem;
+}
+.eliminarProd:hover{
+  color: #48b979;
+}
+
+#totalAPagar {
+  text-align: right;
+  font-size: 2.3rem;
+  color: #4f4f4f;
+  padding-right: 60px;
+}
+
+#vaciarCarrito{
+  text-align: right;
+}
+
+/* Fin Carrito.--------------------------- */
