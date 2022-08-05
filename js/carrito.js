@@ -70,8 +70,8 @@ function createPlatoCarrito(producto) {
   prodCarrito.append(precioTotal);
   //Boton de eliminar
   const eliminarProd = document.createElement("button");
-  eliminarProd.innerText = "X";
-  eliminarProd.className = "eliminarProd";
+  eliminarProd.innerText = "";
+  eliminarProd.className = "eliminarProd fa-solid fa-trash-can";
   prodCarrito.append(eliminarProd);
 
   //Agrego al precioFinal el precioTotal por cada prducto.

@@ -1,3 +1,5 @@
+
+
 //funcion constructora de productos
 class Producto {
   constructor(nombre, precio, img, tipo) {
@@ -13,6 +15,7 @@ class Producto {
     this.cantidad = this.cantidad + cantidad;
   }
 }
+
 
 //Productos
 const productos = [
@@ -42,6 +45,8 @@ const guardarCarrito = (producto, cant) => {
   carrito.push({ producto: producto, cantidad: cant });
 };
 
+
+
 //Function que crea el div de cada producto
 function createPlato(producto) {
   //Creación del div del producto
@@ -61,10 +66,10 @@ function createPlato(producto) {
   //Boton de comprar, que se agrega al div plato.
   const button = document.createElement("button");
   button.className = "btn btn-primary";
-  button.setAttribute("data-bs-toggle", "modal");
-  button.setAttribute("data-bs-target", "#modalComprar");
+  button.id = "btnComprar"
   button.innerText = "Comprar";
   plato.append(button);
+  
 
   //Input de cantidad, que se agrega al div plato.
   const input = document.createElement("input");
@@ -77,10 +82,18 @@ function createPlato(producto) {
   button.addEventListener("click", (e) => {
     guardarCarrito(producto, parseInt(input.value));
     localStorage.setItem("carrito", JSON.stringify(carrito));
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Producto agregado al carrito!',
+      showConfirmButton: false,
+      timer: 1000
+    })
   });
-  
+
   //La function me devuelve el div del plato creado
   return plato;
+
 }
 
 //Creación de las secciones segun "tipo" y los productos en el html.
@@ -97,5 +110,4 @@ for (const prod of productos) {
   }
   prods.className = "platos";
 }
-
 
