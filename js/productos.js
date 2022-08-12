@@ -18,6 +18,7 @@ class Producto {
 
 
 //Productos
+
 const productos = [
   new Producto("Royal Canin gato - Strelized x 7kg", 3539.99,"../images/royal-canin-sterilized.jpg", "gato" ),
   new Producto("ProPlan gato - Adulto x7kg", 3249.99,"../images/pro-plan-adulto.jpeg", "gato" ),
@@ -35,6 +36,7 @@ const productos = [
   new Producto("ProPlan - Alimento humedo - adult 90gr", 215,"../images/pro-plan-adulto.jpeg", "perro" ),
   new Producto("ProPlan - Alimento humedo - kitten 90gr", 215,"../images/kitten-alimento-humedo.webp", "gato" ),
 ];
+
 
 /* console.log(productos[]); */
 

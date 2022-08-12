@@ -90,6 +90,14 @@ function createPlatoCarrito(producto) {
     totalAPagar.innerHTML = `<p>Total A Pagar $ ${precioFinal.toFixed(2)}</p>`;
     prodAgregados.append(totalAPagar);
     console.log(precioFinal);
+
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Producto agregado al carrito!',
+      showConfirmButton: false,
+      timer: 1000
+    });
   });
 
   return prodCarrito;
