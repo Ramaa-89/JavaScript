@@ -1,14 +1,95 @@
 {
-  "Post": {
-    "title": { "string": {} },
-    "comments": {
-      "hasMany": "Comment"
-    }
-  },
-  "Comment": {
-    "body": { "string": {} },
-    "post": {
-      "belongsTo": "Post"
-    }
-  }
+    "Prductos": [
+  
+      { 
+        "nombre" : "Royal Canin gato - Strelized x 7kg", 
+        "precio": 3539.99,
+        "foto": "../images/royal-canin-sterilized.jpg", 
+        "categoria":"gato"
+      },
+      {
+        "nombre": "ProPlan gato - Adulto x7kg",
+        "precio": 3249.99,
+        "foto":"../images/pro-plan-adulto.jpeg",
+        "categoria":"gato"
+      },
+      {
+        "nombre": "Royal Canin perro - Adulto x 10kg",
+        "precio": 3500,
+        "foto": "../images/royal-canin-medium.jpg",
+        "categoria": "perro"
+      },
+      {
+        "nombre": "ProPlan perro - Adulto x10kg",
+        "precio": 3200,
+        "foto": "../images/pro-plan-adulto.jpeg",
+        "categoria": "perro"
+      },
+      {
+        "nombre": "Royal Canin gato - Kitten x 7kg",
+        "precio": 3249.99,
+        "foto": "../images/royal-canin-kitten.jpg",
+        "categoria": "gato"
+      },
+      {
+        "nombre": "ProPlan gato - Kitten x7kg",
+        "precio": 3149.99,
+        "foto": "../images/pro-plan-kitten-gato.webp",
+        "catogoria": "gato"
+      },
+      {
+        "nombre": "Royal Canin - Alimento humedo - control 90gr",
+        "precio": 245,
+        "foto": "../images/royal-canin-control.jpg",
+        "categoria": "gato"
+      },
+      {
+        "nombre": "Royal Canin - Alimento humedo - maxi 90gr",
+        "precio": 245,
+        "foto": "../images/royal-canin-humedo-perro-maxi.webp",
+        "categoria": "perro"
+      },
+      {
+        "nombre": "Royal Canin - Alimento humedo - adult 90gr",
+        "precio": 245,
+        "foto": "../images/adult-alimento-humedo.webp",
+        "categoria": "gato"
+      },
+      {
+        "nombre": "Royal Canin - Alimento humedo - medium 90gr",
+        "precio": 245,
+        "foto": "../images/royal-canin-humedo-perro-medium.webp",
+        "categoria": "perro"
+      },
+      {
+        "nombre": "ProPlan - Alimento humedo - sterilized 90gr",
+        "precio": 215,
+        "foto": "../images/pro-plan-sterilized.jpg",
+        "categoria": "gato"
+      },
+      {
+        "nombre": "ProPlan - Alimento humedo - agile 90gr",
+        "precio": 215,
+        "foto": "../images/pro-plan-agilidad.jpeg",
+        "categoria": "perro"
+      },
+      {
+        "nombre": "ProPlan - Alimento humedo - adult 90gr",
+        "precio": 215,
+        "foto": "../images/pro-plan-adulto.png",
+        "categoria": "gato"
+      },
+      {
+        "nombre": "ProPlan - Alimento humedo - adult 90gr",
+        "precio": 215,
+        "foto": "../images/pro-plan-adulto.jpeg",
+        "categoria": "perro"
+      },
+      {
+        "nombre": "ProPlan - Alimento humedo - kitten 90gr",
+        "precio": 215,
+        "foto": "../images/kitten-alimento-humedo.webp",
+        "categoria": "gato"
+      }
+    ]
 }
