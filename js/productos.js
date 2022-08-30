@@ -16,8 +16,11 @@ class Producto {
   }
 }
 
-const contadorCarrito = document.getElementById("contadorCarrito");
-
+//const contadorCarrito = document.getElementById("contadorCarrito");
+document.getElementById('btnComprar').onclick = function() {
+    contadorCarrito = document.getElementById("contadorCarrito");
+    contadorCarrito.innerText = "" || carrito.length
+}  
 //Creación del carrito y la funcion que agrega al carrito.
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
@@ -25,7 +28,7 @@ const guardarCarrito = (producto, cant) => {
   carrito.push({ producto: producto, cantidad: cant });
 };
 
-contadorCarrito.innerText = "" || carrito.length
+//contadorCarrito.innerText = "" || carrito.length
 
 
 //Function que crea el div de cada producto
