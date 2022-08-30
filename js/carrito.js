@@ -2,6 +2,8 @@
 const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 console.log(carrito);
+const contadorCarrito = document.getElementById("contadorCarrito");
+
 //Creo variable para que se unifique la cantidad si agregó con mas de un click.
 const unificadoObjeto = {};
 
@@ -18,6 +20,7 @@ for (prodComprado of carrito) {
   unificadoObjeto[nombre].cantidad += cant;
   //Esto es igual a: unificadoObjeto[nombre].cantidad = unificadoObjeto[nombre].cantidad + cantidad;
 }
+contadorCarrito.innerText = carrito.length
 
 //Cracion de un array con los values(objetos de cada plato agregado al carrito)
 const unificadoProd = Object.values(unificadoObjeto);
