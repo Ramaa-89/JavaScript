@@ -93,8 +93,8 @@ function createPlatoCarrito(producto) {
 
     Swal.fire({
       position: 'top-end',
-      icon: 'success',
-      title: 'Producto agregado al carrito!',
+      icon: 'error',
+      title: 'Producto eliminado!',
       showConfirmButton: false,
       timer: 1000
     });
