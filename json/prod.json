@@ -5,7 +5,7 @@
   {"nombre": "Royal Canin perro - Adulto x 10kg","precio": 3500,"img": "../images/royal-canin-medium.jpg","tipo": "perro","id":3,"cantidad": 0},
   {"nombre": "ProPlan perro - Adulto x10kg","precio": 3200,"img": "../images/pro-plan-adulto.jpeg","tipo": "perro", "id":4,"cantidad": 0},
   {"nombre": "Royal Canin gato - Kitten x 7kg","precio": 3249.99,"img": "../images/royal-canin-kitten.jpg","tipo": "gato","id":5,"cantidad": 0},
-  {"nombre": "ProPlan gato - Kitten x7kg","precio": 3149.99, "img": "../images/pro-plan-kitten-gato.webp","catogoria": "gato","id":6,"cantidad": 0},
+  {"nombre": "ProPlan gato - Kitten x7kg","precio": 3149.99, "img": "../images/pro-plan-kitten-gato.webp","tipo": "gato","id":6,"cantidad": 0},
   {"nombre": "Royal Canin - Alimento humedo - control 90gr","precio": 245,"img": "../images/royal-canin-control.jpg","tipo": "gato", "id":7,"cantidad": 0},
   {"nombre": "Royal Canin - Alimento humedo - maxi 90gr","precio": 245,"img": "../images/royal-canin-humedo-perro-maxi.webp","tipo": "perro","id":8,"cantidad": 0},
   {"nombre": "Royal Canin - Alimento humedo - adult 90gr", "precio": 245,"img": "../images/adult-alimento-humedo.webp","tipo": "gato","id":9,"cantidad": 0},
