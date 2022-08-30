@@ -94,3 +94,4 @@ fetch("../json/prod.json", {mode: 'no-cors'})
   prods.className = "platos";
   })
 );
+contadorCarrito.innerText = carrito.length
