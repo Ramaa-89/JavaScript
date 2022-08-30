@@ -23,7 +23,7 @@ const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const guardarCarrito = (producto, cant) => {
   carrito.push({ producto: producto, cantidad: cant });
 };
-
+const contadorCarrito = document.getElementById("contadorCarrito");
 
 
 //Function que crea el div de cada producto
