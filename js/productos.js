@@ -25,7 +25,7 @@ const guardarCarrito = (producto, cant) => {
   carrito.push({ producto: producto, cantidad: cant });
 };
 
-contadorCarrito.innerText = carrito.length
+contadorCarrito.innerText = "" || carrito.length
 
 
 //Function que crea el div de cada producto
